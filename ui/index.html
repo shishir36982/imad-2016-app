@@ -1,17 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+        <title>Pick a Date</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h2><br/>Select a Destination</h2>
+		</div>
+        <div class="left">
+            <p>Departing: <input type="text" id="departing"></p>
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        <div class="right">
+            <p>Returning: <input type="text" id="returning"></p>
+        </div><br/>
+        <div id="main">
+        	<p>Destination: <select id="dropdown">
+				<option value="newyork">New York</option>
+				<option value="london">London</option>
+				<option value="beijing">Beijing</option>
+				<option value="moscow">Moscow</option>
+			</select></p>
+			<button>Submit</button>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+	</body>
 </html>
