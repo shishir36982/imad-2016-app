@@ -1,4 +1,3 @@
-console.log('Loaded!');
 $(document).ready(function() {
     $("#departing").datepicker();
     $("#returning").datepicker();
