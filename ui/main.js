@@ -1,4 +1,5 @@
-$(document).ready(function() {
+console.log('loaaded!');
+(document).ready(function() {
     $("#departing").datepicker();
     $("#returning").datepicker();
     $("button").click(function() {
