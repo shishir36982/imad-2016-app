@@ -1,45 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pick a Date</title>
-        <link rel='stylesheet' type='text/css' href='/ui/style.css'/>
-        <link rel='stylesheet' type='text/css' href='https://cloud.imad.hasura.io/code/files/ui%2Fstyle.css'/>
-        <script type='text/javascript' src='/ui/main.js'></script>
-        <script>$(document).ready(function() {
-                    $("#departing").datepicker();
-                    $("#returning").datepicker();
-                    $("button").click(function() {
-                	    var selected = $("#dropdown option:selected").text();
-                        var departing = $("#departing").val();
-                        var returning = $("#returning").val();
-                            if (departing === "" || returning === "") {
-			                        alert("Please select departing and returning dates.");
-                             } else {
-			                     confirm("Would you like to go to " + selected + " on " + departing + " and return on " + returning + "?");
-                        }
-                    });
-                });</script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-	</head>
-	<body>
-		<div id="header">
-			<h2><br/>Select a Destination</h2>
-		</div>
-        <div class="left">
-            <p>Departing: <input type="text" id="departing"></p>
-        </div>
-        <div class="right">
-            <p>Returning: <input type="text" id="returning"></p>
-        </div><br/>
-        <div id="main">
-        	<p>Destination: <select id="dropdown">
-				<option value="newyork">New York</option>
-				<option value="london">London</option>
-				<option value="beijing">Beijing</option>
-				<option value="moscow">Moscow</option>
-			</select></p>
-			<button>Submit</button>
-        </div>
-        
-	</body>
+<html lang="en">
+  <head>
+	<title>college tech</title>
+	<meta name="description" content="Description of your website"/>
+	<meta name="keywords" content="key words"/>
+    <meta name="author" content="Valemax Studio"/>
+	<!-- Web favicon -->
+	<link rel="icon" href="favicon.png" sizes="16x16">
+	<!-- CSS linking -->
+	 <link href="style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+	
+
+<nav style="float:right;">
+
+
+	<ul>
+
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a>
+			<ul>
+				<li><a href="1.HTML">Web Design</a></li>
+				<li><a href="3.HTML">Graphics</a></li>
+				<li><a href="2.HTML">Pc Maintenance</a></li>
+				
+			</ul>
+		</li>
+		
+		
+		<li><a href="#">Location</a></li>
+		<li><a href="#">Portfolio</a>
+			<ul>	
+				<li><a href="5.HTML">NEWS</a></li>
+				<li><a href="4.HTML">Computer</a></li>
+				<li><a href="6.HTML">Gallery</a></li>
+			</ul>
+		</li>
+				
+		<li><a href="7.HTML">Contact</a></li>
+
+	</ul>
+
+
+</nav>
+
+	<!-- Header Section -->
+	<header>
+		<section class="container">
+		<a id="logo" target="_blank" href="http://www.valemaxstudio.com">college tech</a>
+		<p></p>
+		</section>
+	</header>
+	<!-- Header Section End-->
+	
+	<!-- Content Section -->
+	<section class="container">
+		<section class="left-bar">
+			<p> </p>
+		</section>
+		
+		<section class="mid-bar">
+			<p><img style="width:487px; border:1px solid gray;" src=""/></p>
+			
+			<p></p>
+		
+			<p></p>
+		</section>
+		
+		<section class="right-bar">
+			<p</p>
+			<p></p>
+		
+		</section>
+	
+	
+	</section>
+	<!-- Content Section End-->
+	
+	<!-- Footer Section -->
+	<footer>
+		<p></p>
+	</footer>
+	<!-- Footer Section End -->
+  
+ </body>
 </html>
