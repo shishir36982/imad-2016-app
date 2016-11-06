@@ -4,6 +4,9 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+app.get('1', function(req,res) {
+res.send(createTemplate(articles['1']));
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
